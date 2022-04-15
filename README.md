@@ -1,6 +1,7 @@
 # demo
+https://api-routes-cors-app.vercel.app
 ```
-curl --location --request POST 'https://api-routes-cors-app-mintcoin7.vercel.app/api/graphql' \
+curl --location --request POST 'https://api-routes-cors-app.vercel.app/api/graphql' \
 --header 'Content-Type: application/json' \
 --data-raw '{"query":"query GetUser($name: String!) {\n  getUser(name: $name) {\n    avatar_url\n  }\n}","variables":{"name":"mingderwang"}}'
 ```
