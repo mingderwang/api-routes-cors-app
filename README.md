@@ -10,7 +10,10 @@ curl --location --request POST 'http://localhost:3000/api/graphql' \
 --header 'Content-Type: application/json' \
 --data-raw '{"query":"query GetUser($name: String!) {\n  getUser(name: $name) {\n    avatar_url\n  }\n}","variables":{"name":"mingderwang"}}'
 ```
-
+result
+```
+{"data":{"getUser":{"avatar_url":"https://avatars.githubusercontent.com/u/47238?v=4"}}}
+```
 
 # API Routes Example with CORS
 
