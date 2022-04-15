@@ -1,3 +1,17 @@
+# demo
+```
+curl --location --request POST 'https://api-routes-cors-app-mintcoin7.vercel.app/api/graphql' \
+--header 'Content-Type: application/json' \
+--data-raw '{"query":"query GetUser($name: String!) {\n  getUser(name: $name) {\n    avatar_url\n  }\n}","variables":{"name":"mingderwang"}}'
+```
+or
+```
+curl --location --request POST 'http://localhost:3000/api/graphql' \
+--header 'Content-Type: application/json' \
+--data-raw '{"query":"query GetUser($name: String!) {\n  getUser(name: $name) {\n    avatar_url\n  }\n}","variables":{"name":"mingderwang"}}'
+```
+
+
 # API Routes Example with CORS
 
 Next.js ships with [API routes](https://nextjs.org/docs/api-routes/introduction) which provides an easy solution to build your own `API`.
